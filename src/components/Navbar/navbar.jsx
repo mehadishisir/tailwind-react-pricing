@@ -1,4 +1,6 @@
-import React, { useLayoutEffect } from "react";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+
 const navLinks = [
   {
     id: 1,
@@ -28,15 +30,32 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const links = navLinks.map((nav) => (
+    <li className="ml-5" key={nav.id}>
+      <a href={nav.path}>{nav.name}</a>
+    </li>
+  ));
   return (
-    <nav>
-      {navLinks.map((nav) => (
-        <ul key={nav.id}>
-          <li>
-            <a href={nav.path}>{nav.name}</a>
-          </li>
+    <nav className=" flex justify-between mx-7 mt-5 ">
+      <span className="flex" onClick={() => setOpen(!open)}>
+        {open ? (
+          <X className="md:hidden"></X>
+        ) : (
+          <Menu className="md:hidden"></Menu>
+        )}
+        <ul
+          className={`md:hidden absolute bg-amber-200 duration-1000 ${
+            open ? "top-8" : "-top-30"
+          }`}
+        >
+          {links}
         </ul>
-      ))}
+
+        <h1 className="ml-5">My Nav</h1>
+      </span>
+      <ul className="md:flex hidden">{links}</ul>
+
       {/* //{" "}
       <ul className="flex">
         //{" "}
@@ -56,6 +75,7 @@ const Navbar = () => {
         </li>
         //{" "}
       </ul> */}
+      <button>signUp</button>
     </nav>
   );
 };

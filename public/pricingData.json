@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": 1200,
+    "duration": "per month",
+    "features": [
+      "Access to all basic gym equipment",
+      "Locker and changing room facility",
+      "Morning & evening workout sessions",
+      "1 free fitness assessment per month",
+      "Unlimited drinking water",
+      "Free Wi-Fi access"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": 2500,
+    "duration": "per month",
+    "Popular": "yes",
+    "features": [
+      "Includes all Basic Plan benefits",
+      "Personal trainer (3 days/week)",
+      "Diet and workout guidance from experts",
+      "Free protein shake every week",
+      "Access to cardio and weight training zones",
+      "Body measurement tracking"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": 4000,
+    "duration": "per month",
+    "features": [
+      "24/7 unlimited gym access",
+      "Dedicated personal trainer (daily)",
+      "Customized meal and workout plan",
+      "Monthly body composition analysis",
+      "Steam bath and sauna access",
+      "Priority support and booking",
+      "Free branded gym T-shirt"
+    ]
+  }
+]

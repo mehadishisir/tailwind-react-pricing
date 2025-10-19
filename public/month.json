@@ -1,0 +1,8 @@
+[
+  { "month": "January", "members": 45, "newMembers": 10, "revenue": 8000 },
+  { "month": "February", "members": 60, "newMembers": 15, "revenue": 9500 },
+  { "month": "March", "members": 75, "newMembers": 20, "revenue": 11200 },
+  { "month": "April", "members": 90, "newMembers": 25, "revenue": 13000 },
+  { "month": "May", "members": 110, "newMembers": 30, "revenue": 15500 },
+  { "month": "June", "members": 130, "newMembers": 35, "revenue": 17800 }
+]
